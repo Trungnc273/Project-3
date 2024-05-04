@@ -44,6 +44,26 @@ button:hover {
   border-radius: 30px;
   background: #2e80ce;
 }
+.h2-title {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.describe {
+  margin-top: 18px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 166.667%;
+}
+.sub-describe {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 175%;
+}
 /* =========================================Header================================================= */
 .header {
   background-color: var(--header_footer-bgc);
@@ -185,4 +205,86 @@ button:hover {
   flex-shrink: 0;
   border-radius: 0px 6px 6px 0px;
   object-fit: cover;
+}
+
+/* =========================================Services================================================= */
+.services {
+  padding: 170px 0;
+}
+
+.service--title {
+  text-align: center;
+}
+
+.service--describe {
+  width: 468px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services__body {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__body--img {
+  width: 570px;
+  height: 570px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.services__body--item {
+  width: 470px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  padding: 21px 0 0 22px;
+  gap: 19px;
+  opacity: 1;
+  transition: 0.3s;
+  color: #10375c;
+}
+
+.services__body--item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.services__body--item:hover .services__body--icon {
+  background: #2e80ce;
+  color: #fff;
+  transition: 0.1s;
+}
+
+.services__body--icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__body--title {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.services__body--describe {
+  width: 308px;
+  margin-top: 8px;
+}
+.services__body--services {
+  margin-top: 55px;
 }
