@@ -30,7 +30,8 @@ button {
 }
 
 button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 .btn {
   color: #fff;
@@ -43,6 +44,7 @@ button:hover {
   flex-shrink: 0;
   border-radius: 30px;
   background: #2e80ce;
+  transition: 0.3s;
 }
 .h2-title {
   color: #10375c;
@@ -65,6 +67,40 @@ button:hover {
   font-weight: 300;
   line-height: 175%;
 }
+.btn-previous {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.btn-next {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.btn-next:hover,
+.btn-previous:hover {
+  background-color: #2e80ce;
+  border-color: #2e80ce;
+  color: white;
+  opacity: 1;
+  transition: 0.3s;
+}
+
 /* =========================================Header================================================= */
 .header {
   background-color: var(--header_footer-bgc);
@@ -244,20 +280,20 @@ button:hover {
   padding: 21px 0 0 22px;
   gap: 19px;
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.6s;
   color: #10375c;
 }
 
 .services__body--item:hover {
   position: relative;
   box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .services__body--item:hover .services__body--icon {
   background: #2e80ce;
   color: #fff;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 .services__body--icon {
@@ -270,6 +306,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.6s;
 }
 
 .services__body--title {
@@ -341,4 +378,106 @@ button:hover {
   color: #2e80ce;
   font-weight: 400;
   transition: 0.3s;
+}
+
+/* =========================================About================================================= */
+.about {
+  margin-top: 170px;
+}
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__imgs {
+  width: 48.718%;
+  position: relative;
+  padding-bottom: 121px;
+}
+.about__imgs--img-left {
+  width: 512px;
+  height: 370px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+.about__imgs--img-right {
+  width: 332px;
+  height: 370px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+  position: absolute;
+  top: 121px;
+  left: 238px;
+}
+
+.about__content--title {
+  width: 470px;
+}
+
+.about__content--more {
+  margin-top: 38px;
+}
+
+/* =========================================Team================================================= */
+.team {
+  margin-top: 170px;
+}
+.team--title {
+  text-align: center;
+}
+
+.team--dentist {
+  display: block;
+  margin: 38px auto 70px auto;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.team__item--bgr {
+  border-radius: 6px;
+  background: #eaf6ff;
+  padding-top: 28px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.team__item--bgr:hover .team__item--avatar {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.team__item--avatar {
+  height: 290px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.team__item--name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 175%;
+}
+.team__item--describe {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 185.714%;
+}
+
+.team__action {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
 }
