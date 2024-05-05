@@ -481,3 +481,132 @@ button:hover {
   justify-content: center;
   gap: 18px;
 }
+/* =========================================CTA1================================================= */
+.cta1 {
+  margin-top: 265px;
+}
+.cta1__content {
+  border-radius: 4px;
+  background: #2e80ce;
+  display: flex;
+  position: relative;
+  padding: 75px 0;
+  justify-content: right;
+}
+
+.cta1__content--mobile {
+  width: 284px;
+  height: 522px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 5.983%;
+  bottom: 0;
+}
+
+.cta1__content--body {
+  margin-right: 5.983%;
+}
+
+.cta1__content--title {
+  width: 489px;
+  color: #fff;
+}
+.cta1__content--describe {
+  width: 586px;
+  color: #fff;
+}
+.cta1__content--install {
+  display: flex;
+  gap: 3.393%;
+  margin-top: 38px;
+}
+/* =========================================Blog================================================= */
+.blog {
+  margin-top: 170px;
+}
+
+.blog__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__left--title {
+  width: 470px;
+}
+
+.blog__left--read {
+  display: inline-block;
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 155.556%;
+  text-decoration-line: underline;
+  margin: 28px 0;
+  text-underline-offset: 4px;
+}
+
+.blog__left--action {
+  display: flex;
+  gap: 18px;
+}
+.blog__right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.blog__right--item {
+  width: 270px;
+  height: 375px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.blog__right--item:hover {
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  transition: 0.3s;
+}
+.blog__right--img {
+  width: 270px;
+  height: 172px;
+  flex-shrink: 0;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
+
+.blog__right--title {
+  width: 224px;
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 162.5%;
+  margin-top: 18px;
+  margin-left: 22px;
+}
+
+.blog__right--describe {
+  width: 226px;
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 171.429%;
+  margin: 10px auto;
+}
+.blog__right--learn-more {
+  color: #10375c;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2px 0 21px 22px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.blog__right--item:hover .blog__right--learn-more {
+  color: #2e80ce;
+  transition: 0.3s;
+}
